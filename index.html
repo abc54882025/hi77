@@ -15,40 +15,45 @@
     <script src="static/js/rem.js"></script>
     <script src="static/js/allLinks.js"></script>
     <style>
-        body {
-            background-color: #121712;
+    body {
+        background-color: #121712;
+    }
+
+    .mobile-wrap {
+        background-color: #310101;
+    }
+
+    .tops {
+        text-align: center;
+    }
+
+    .tops img {
+        width: 50%;
+        height: auto;
+        display: inline-block;
+    }
+
+    .marquee {
+        color: #ffffff !important;
+    }
+    
+    /* THÊM ĐOẠN NÀY */
+    .swiper-slide, .swiper-slide img {
+        background-color: transparent !important;
+    }
+
+    @media screen and (min-width:750px) {
+        .center {
+            width: 750px !important;
+            margin-left: -375px !important;
+            left: 50% !important;
         }
 
-        .mobile-wrap {
-            background-color: #310101;
+        .fixed-right {
+            right: calc((100% - 750px)/2)
         }
-
-        .tops {
-            text-align: center;
-        }
-
-        .tops img {
-            width: 50%;
-            height: auto;
-            display: inline-block;
-        }
-
-        .marquee {
-            color: #ffffff !important;
-        }
-
-        @media screen and (min-width:750px) {
-            .center {
-                width: 750px !important;
-                margin-left: -375px !important;
-                left: 50% !important;
-            }
-
-            .fixed-right {
-                right: calc((100% - 750px)/2)
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
